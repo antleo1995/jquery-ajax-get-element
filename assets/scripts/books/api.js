@@ -8,7 +8,13 @@ const index = function () {
     method: 'GET'
   })
 }
-
+const show = function (bookId) {
+  return $.ajax({
+    url: app.host + '/books/' + bookId,
+    method: 'GET'
+  })
+}
 module.exports = {
-  index
+  index,
+  show
 }

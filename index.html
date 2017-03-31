@@ -22,8 +22,15 @@
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.</p>
 
-      <form class='books'>
-        <button type="submit" class="btn btn-default">Get all Books</button>
+      <h2>Get all Books</h2>
+      <form class='books' id='books-search'>
+        <button type="submit" class="btn btn-default">Get all books</button>
+      </form>
+
+      <h2>Get one book</h2>
+      <form class='books' id='book-search'>
+         BookID: <input type="text" name='book[id]' id='book-id' placeholder="Resource Id">
+         <button type="submit" class='btn btn-default'>Get book</button>
       </form>
 
     </body>
